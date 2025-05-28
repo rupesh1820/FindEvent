@@ -1,4 +1,4 @@
-
+import React from "react";
 
 const WeOffer = () => {
   const events = [
