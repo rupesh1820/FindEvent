@@ -11,7 +11,7 @@ const Homepage = () => {
       <Descriptionpage/>
       <FeaturedJob></FeaturedJob>
       <WeOffer></WeOffer>
-      <Footer></Footer>
+      
       
     </div>
   )

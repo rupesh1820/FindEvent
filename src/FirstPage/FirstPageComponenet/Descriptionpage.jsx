@@ -1,11 +1,11 @@
 import React from 'react';
-import eventPlaner from '../../../public/image/Event.jpg';
+
 
 const Descriptionpage = () => {
   return (
     <div className="flex flex-col items-center px-4 py-8 md:px-8 lg:px-16">
       <img 
-        src={eventPlaner} 
+        src=' /image/Event.jpg'
         className="w-full max-w-4xl h-auto rounded-lg shadow-md object-cover" 
         alt="Event Planning" 
       />

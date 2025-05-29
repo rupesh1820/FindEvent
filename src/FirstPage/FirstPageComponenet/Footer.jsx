@@ -20,7 +20,7 @@ const Footer = () => {
             autoComplete="email"
             className="w-full sm:w-64 px-4 py-2 rounded-xl border border-gray-300"
           />
-          <button
+          <button 
             type="submit"
             className="bg-violet-800 text-white px-4 py-2 rounded-xl hover:bg-violet-700 transition"
           >
@@ -44,7 +44,7 @@ const Footer = () => {
           </svg>
         </a>
         {/* Instagram */}
-        <a href="#" aria-label="Instagram" className="text-gray-700 hover:text-violet-800">
+        <a href="#" aria-label="Instagram" className="text-gray-700 hover:text-red-600">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path
               fillRule="evenodd"
@@ -64,7 +64,7 @@ const Footer = () => {
           </svg>
         </a>
         {/* YouTube */}
-        <a href="#" aria-label="YouTube" className="text-gray-700 hover:text-violet-800">
+        <a href="#" aria-label="YouTube" className="text-gray-700 hover:text-red-600">
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path
               fillRule="evenodd"

@@ -1,19 +1,14 @@
 import React from 'react';
-import Birthday from '../../../public/image/birthday.jpg';
-import celebrity from '../../../public/image/celebrity.webp';
-import corporate from '../../../public/image/corporate.jpg';
-import promotion from '../../../public/image/promotion.jpg';
-import wedding from '../../../public/image/wedding.jpg';
-import secuirity from '../../../public/image/secuirity.png';
+
 
 const FeaturedJob = () => {
   const jobs = [
-    { img: Birthday, title: "Birthday Organizing" },
-    { img: celebrity, title: "Celebrity & VIP Event Organizing" },
-    { img: corporate, title: "Corporate Event Organizing" },
-    { img: promotion, title: "Marketing Event" },
-    { img: wedding, title: "Wedding Organizing" },
-    { img: secuirity, title: "Event Security" },
+    { img: '/image/birthday.jpg', title: "Birthday Organizing" },
+    { img: '/image/celebrity.webp', title: "Celebrity & VIP Event Organizing" },
+    { img: '/image/corporate.jpg', title: "Corporate Event Organizing" },
+    { img: '/image/promotion.jpg', title: "Marketing Event" },
+    { img: '/image/wedding.jpg', title: "Wedding Organizing" },
+    { img: '/image/secuirity.png', title: "Event Security" },
   ];
 
   return (
@@ -22,16 +17,20 @@ const FeaturedJob = () => {
       
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
         {jobs.map((job, index) => (
-          <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-md">
-            <img
-              className="w-full h-24 object-cover"
-              src={job.img}
-              alt={job.title}
-            />
-            <div className="bg-yellow-300 text-violet-800 text-xs text-center px-2 py-2 h-10 flex items-center justify-center font-medium">
-              {job.title}
-            </div>
-          </div>
+<div
+  key={index}
+  className="bg-white rounded-2xl transition-transform duration-300 ease-in-out overflow-hidden shadow-md hover:scale-105"
+>
+  <img
+    className="w-full h-24 object-cover"
+    src={job.img}
+    alt={job.title}
+  />
+  <div className="bg-yellow-300 text-violet-800 text-xs text-center px-2 py-2 h-10 flex items-center justify-center font-medium">
+    {job.title}
+  </div>
+</div>
+
         ))}
       </div>
     </div>
