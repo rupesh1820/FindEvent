@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Login from './Login';
 import Signup from './signUpPage/Signup';
-
+import { useNavigate } from 'react-router-dom';
 const LogSign = () => {
  const [btnTaped, setBtnTaped] = useState('Login')
+
+ 
  
 
   return (
@@ -20,12 +22,14 @@ const LogSign = () => {
         <div className="flex flex-col items-center justify-center mt-10 space-y-6">
           <div className="flex justify-center gap-6 bg-violet-800 text-white rounded-md w-full max-w-xs py-2">
             <button className="w-1/2" onClick={()=>setBtnTaped('Login')}>Login</button>
-            <button className="w-1/2" onClick={()=>setBtnTaped('SignUp')}>SignUp</button>
+            <button className="w-1/2" onChange={()=>urChang('/Signup')} onClick={()=>setBtnTaped('SignUp')}>SignUp</button>
           </div>
 
           <div className="w-full max-w-sm bg-white rounded-b-md shadow-md px-4 py-6">
             {btnTaped==='Login'? <h2 className='text-2xl'>Wellcome To Login</h2> : <h2 className='text-2xl'>SignUp</h2>}
-            {btnTaped ==='Login'? <Login></Login> : <Signup/>}
+            {btnTaped ==='Login'&&<Login></Login>}
+             
+             {btnTaped ==='SignUp' && <Signup/>}
           </div>
         </div>
       </div>

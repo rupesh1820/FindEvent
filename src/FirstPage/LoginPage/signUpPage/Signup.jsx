@@ -21,8 +21,11 @@ const Signup = () => {
           </label>
           <input
             type="number"
+            maxLength="10"
+            pattern='[0-9] {10}'
+
             placeholder="Enter Number"
-            className="mt-2 w-full h-10 border rounded-sm px-3 outline-none"
+            className="mt-2  w-full h-10 border rounded-sm px-3 outline-none"
           />
         </div>
 
