@@ -1,4 +1,5 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,7 +22,8 @@ const Footer = () => {
             className="w-full sm:w-64 px-4 py-2 rounded-xl border border-gray-300"
           />
           <button 
-            type="submit"
+            onClick={()=>Navigate('/login')}
+            
             className="bg-violet-800 text-white px-4 py-2 rounded-xl hover:bg-violet-700 transition"
           >
             Subscribe

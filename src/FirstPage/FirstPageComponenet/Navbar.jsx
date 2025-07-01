@@ -35,7 +35,7 @@ const Navbar = () => {
           className="bg-white rounded px-4 py-3 w-full sm:w-64 lg:w-72 xl:w-80 2xl:w-96 max-w-[1440px]"
           placeholder="Location"
         />
-        <button className="bg-violet-800 text-white px-6 py-3 rounded hover:bg-violet-700 transition duration-200 w-full sm:w-auto text-base lg:text-lg">
+        <button onClick={()=>navigate('/login')} className="bg-violet-800 text-white px-6 py-3 rounded hover:bg-violet-700 transition duration-200 w-full sm:w-auto text-base lg:text-lg">
           Search
         </button>
       </div>
